@@ -3,6 +3,8 @@ import { Switch, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage"
 import Login from "./pages/Login"
 import JobDetails from "./pages/JobDetails"
+import Navbar from "./components/Navbar"
+
 
 function App() {
 
@@ -11,7 +13,11 @@ function App() {
 
   return (
     <div>
-      <h1>ITviec</h1>
+      <div className="header">
+        <div className="container">
+          <Navbar />
+        </div>
+      </div>
       <Switch>
         <Route path="/" exact component={Homepage} />
         <Route path="/login" exact component={Login} />
