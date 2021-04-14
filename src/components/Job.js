@@ -1,4 +1,6 @@
 import React from 'react';
+import Moment from 'react-moment';
+
 
 const Job = (props) => {
     return (
@@ -14,7 +16,7 @@ const Job = (props) => {
             <div className="job-right">
                 {props.hot == true ? <p className="hot">Hot</p> : <div></div>}
                 <p className="city">{props.city}</p>
-                <p className="time">{props.time}</p>
+                <p className="time"><Moment fromNow>{props.time}</Moment></p>
             </div>
 
         </div>
