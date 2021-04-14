@@ -9,7 +9,7 @@ function Homepage() {
     const [jobs, setJobs] = useState([])
 
     const getJobs = async () => {
-        const res = await axios.get(`http://localhost:5001/jobs`)
+        const res = await axios.get(`https://my-json-server.typicode.com/lqdquangdinh/itviec/jobs`)
         console.log(res.data)
         setJobs(res.data)
     }

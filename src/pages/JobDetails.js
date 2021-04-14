@@ -7,7 +7,7 @@ function JobDetails() {
     const { id } = useParams()
 
     const getSingleJob = async () => {
-        const res = await axios.get(`http://localhost:5001/jobs/${id}`)
+        const res = await axios.get(`https://my-json-server.typicode.com/lqdquangdinh/itviec/jobs/${id}`)
         console.log(res.data)
     }
 
